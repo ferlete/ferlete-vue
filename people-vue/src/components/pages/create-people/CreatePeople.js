@@ -25,7 +25,8 @@ export default {
   },
   validations: {
     peopleForm: {
-      name: { required },
+      id: { required },
+      nome: { required },
       nascimento: { required },
       CPF: { required },
     },
@@ -39,13 +40,13 @@ export default {
 
         this.$v.$touch();
         if (this.$v.$invalid) {
-          this.$swal('Oops!', 'You need to include all the required fields', 'error');
+          this.$swal('Oops!', 'Todos os campos devem ser preenchidos', 'error');
           return;
         }
 
         await PeopleService.createNewPeople(this.peopleForm);
         this.$swal({
-          title: 'People added successfully!',
+          title: 'Pessoa adiconada com sucesso!',
           icon: 'success',
           showConfirmButton: true,
           allowOutsideClick: false,
