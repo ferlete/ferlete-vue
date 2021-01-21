@@ -1,8 +1,8 @@
 /**
  * arquivo: routes/index.js
  * descrição: arquivo responsável pela chamada da API na aplicação no lado do Back-End
- * data: 31/07/2020
- * author: Glaucia Lemos <@glaucia_lemos86>
+ * data: 21/01/2021
+ * author: Valter Ferlete <ferlete@gmail.com>
  */
 
 const express = require('express');
