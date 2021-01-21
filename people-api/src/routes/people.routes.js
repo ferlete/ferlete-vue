@@ -15,7 +15,7 @@ const peopleController = require('../controllers/people.controller');
 router.post('/peoples', peopleController.createPeople);
 
 // ==> Rota responsável por listar todos as 'Pessoas': (GET): localhost:3000/api/peoples
-router.get('/peoples', peopleController.listAllPeople);
+router.get('/peoples', peopleController.listAllPeoples);
 
 // ==> Rota responsável por listar uma determinada 'Pessoa' por Id: (GET): localhost:3000/api/peoples/:id
 router.get('/peoples/:id', peopleController.findPeopleById)
