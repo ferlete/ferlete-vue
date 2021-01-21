@@ -60,7 +60,7 @@
               id="nascimento"
               name="nascimento"
               class="form-control"
-              placeholder="YYYY/MM/DD"
+              placeholder="DD/MM/YYYY"
               v-model="peopleForm.nascimento"
               :class="{
                 'is-invalid': isSubmitted && $v.peopleForm.nascimento.$error,

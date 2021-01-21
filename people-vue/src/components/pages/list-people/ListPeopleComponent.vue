@@ -4,6 +4,7 @@
     <table class="table table-striped">
       <thead>
         <tr>
+
           <th class="text-center">id</th>
           <th class="text-center">Nome</th>
           <th class="text-center">Nascimento</th>
@@ -13,19 +14,20 @@
       </thead>
       <tbody>
         <tr v-for="people in peoples" :key="people.id">
-          <td>{{ people.name }}</td>
+          <td>{{ people.id }}</td>
+          <td>{{ people.nome }}</td>
           <td>{{ people.nascimento }}</td>
-          <td>{{ people.CPF }}</td>
+          <td>{{ people.cpf }}</td>
           <td>
             <router-link
               :to="{ name: 'update', params: { id: people.id } }"
               class="btn btn-success">
-              <font-awesome-icon :icon="['fas', 'user-edit']" /> Edit
+              <font-awesome-icon :icon="['fas', 'user-edit']" /> Alterar
             </router-link>
           </td>
           <td>
             <button @click="removePeople(people.id)" class="btn btn-danger">
-              <font-awesome-icon :icon="['fas', 'trash']" /> Delete
+              <font-awesome-icon :icon="['fas', 'trash']" /> Excluir
             </button>
           </td>
         </tr>

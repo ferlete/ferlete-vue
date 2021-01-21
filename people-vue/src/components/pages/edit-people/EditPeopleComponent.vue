@@ -20,7 +20,7 @@
           </div>
           <!--FIM DO BLOCO: People id-->
 
-          <!--INÍCIO DO BLOCO: People Name-->
+          <!--INÍCIO DO BLOCO: People Nome-->
           <div class="form-group">
             <label class="font-weight-bold">Nome</label>
             <input
@@ -28,7 +28,7 @@
               id="nome"
               name="nome"
               class="form-control"
-              v-model="peopleForm.name"
+              v-model="peopleForm.nome"
             >
           </div>
           <!--FIM DO BLOCO: People Name-->
@@ -44,7 +44,7 @@
               v-model="peopleForm.nascimento"
             >
           </div>
-          <!--FIM DO BLOCO: Birth-->
+          <!--FIM DO BLOCO: Nascimento-->
 
           <!--INÍCIO DO BLOCO: People CPF-->
           <div class="form-group">
@@ -54,13 +54,13 @@
               id="CPF"
               name="CPF"
               class="form-control"
-              v-model="peopleForm.CPF"
+              v-model="peopleForm.cpf"
             >
           </div>
           <!--FIM DO BLOCO: Nascimento-->
           <div class="form-group">
             <button type="submit" class="btn btn-primary">
-              <font-awesome-icon :icon="['fas', 'user-edit']"/> Update
+              <font-awesome-icon :icon="['fas', 'user-edit']"/> Atualizar
             </button>
           </div>
         </form>

@@ -36,7 +36,7 @@ exports.listAllPeoples = async (req, res) => {
     const { rows } = await db.query(`SELECT 
                                       id,
                                       nome,                                       
-                                      to_char(nascimento, 'yyyy-MM-dd') as nascimento,
+                                      to_char(nascimento, 'dd/mm/yyyy') as nascimento,
                                       CPF 
                                     FROM people ORDER BY nome asc`);
     res.status(200).send(rows);
@@ -55,7 +55,8 @@ exports.findPeopleById = async (req, res) => {
     const { rows } = await db.query(`SELECT 
                                       id,
                                       nome,                                       
-                                      to_char(nascimento, 'yyyy-MM-dd') as nascimento 
+                                      to_char(nascimento, 'dd/mm/yyyy') as nascimento,
+                                      CPF 
                                     FROM people WHERE id = $1`,
       [id]
     );

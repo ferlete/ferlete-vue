@@ -13,6 +13,10 @@ export default {
   data() {
     return {
       peopleForm: {
+        id: null,
+        nome: null,
+        nascimento: null,
+        CPF: null,
       },
     };
   },
@@ -33,7 +37,7 @@ export default {
       // Chamada do service passando as propriedades por meio do 'peopleForm' (funciona)
       await PeopleService.updatePeople(this.peopleForm);
       this.$swal({
-        title: 'People updated successfully!',
+        title: 'Pessoa atualizado com sucesso!',
         icon: 'success',
         showConfirmButton: true,
         allowOutsideClick: false,

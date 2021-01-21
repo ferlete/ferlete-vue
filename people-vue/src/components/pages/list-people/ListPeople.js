@@ -27,8 +27,8 @@ export default {
 
     async removePeople(id) {
       this.$swal({
-        title: 'Are you sure you want to delete the people?',
-        text: 'Watch out! This People will be deleted!',
+        title: 'Tem certeza que quer excluir essa pessoa?',
+        text: 'Cuidado! Esta pessoa será excluida!',
         icon: 'warning',
         showConfirmButton: true,
         allowOutsideClick: false,
@@ -37,14 +37,14 @@ export default {
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes! Please, delete it!',
+        confirmButtonText: 'Sim! Por Favor, Exclua!',
       }).then(async (result) => {
         if (result.value) {
           await PeopleService.deletePeople(id);
-          this.$swal('Deleted', 'Successfully deleted', 'success');
+          this.$swal('Excluido', 'Excusão Sucesso', 'success');
           this.listAllPeoples();
         } else {
-          this.$swal('Cancelled', 'Cancel deletion', 'info');
+          this.$swal('Cancelado', 'Exclusão Cancelada', 'info');
         }
       });
     },
