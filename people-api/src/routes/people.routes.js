@@ -1,6 +1,6 @@
 // @ts-nocheck
 /**
- * arquivo: routes/employee-routes.js
+ * arquivo: routes/people-routes.js
  * descrição: arquivo responsável pelas rotas da API
  * data: 21/01/2021
  * author: Valter Ferlete <ferlete@gmail.com>

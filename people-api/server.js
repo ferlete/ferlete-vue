@@ -1,6 +1,6 @@
 /**
  * arquivo: server.js
- * descrição: arquivo responsável por toda a configuração e execucação do Back-End ('Employee')
+ * descrição: arquivo responsável por toda a configuração e execucação do Back-End ('People')
  * data: 21/01/2021
  * author: Valter Ferlete <ferlete@gmail.com>
  */

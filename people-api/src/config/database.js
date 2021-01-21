@@ -1,6 +1,6 @@
 /**
  * arquivo: config/database.js
- * descrição: arquivo responsável pelas 'connectrionStrings' (Cosmos DB & PostgreSQL)
+ * descrição: arquivo responsável pelas 'connectrionStrings' (PostgreSQL)
  * data: 21/01/2021
  * author: Valter Ferlete <ferlete@gmail.com>
  */

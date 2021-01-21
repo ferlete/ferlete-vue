@@ -1,5 +1,9 @@
 {
   "name": "front-vue-v2",
+  "description": "Aplicação CRUD com Node.js + PostgreSQL",
+  "author": "Valter Ferlete - ferlete@gmail.com",
+  "homepage": "https://github.com/ferlete/ferlete-vue#readme",
+  "license": "MIT",
   "version": "0.1.0",
   "private": true,
   "scripts": {

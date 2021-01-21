@@ -1,5 +1,5 @@
 /**
- * arquivo: controllers/employee-routes.js
+ * arquivo: controllers/people-routes.js
  * descrição: arquivo responsável pela lógica do CRUD (API - People)
  * data: 21/01/2021
  * author: Valter Ferlete <ferlete@gmail.com>
@@ -19,7 +19,7 @@ exports.createPeople = async (req, res) => {
     res.status(201).send({
       message: "People added successfully!",
       body: {
-        employee: { id, nome, nascimento, CPF },
+        people: { id, nome, nascimento, CPF },
       },
     });
   } catch (error) {
@@ -82,7 +82,7 @@ exports.updatePeopleById = async (req, res) => {
   const { id } = req.params;
   try {
     const { nome, nascimento, CPF } = req.body;
-    const { rows } = await db.query(`UPDATE employee 
+    const { rows } = await db.query(`UPDATE people 
                                     SET nome = $1, 
                                     nascimento = $2, 
                                     CPF = $3,                                     
